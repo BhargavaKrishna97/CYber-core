@@ -1,6 +1,7 @@
 import requests
 import dns.resolver
 import whois
+import json
 
 # -----------------------------
 # Subdomain Enumeration
@@ -32,7 +33,7 @@ def get_subdomains(domain):
                             if domain in sub:
                                 sub = sub.strip()
 
-                                # Filter unwanted entries
+                                # Remove unwanted entries
                                 if (
                                     "@" not in sub and
                                     not sub.startswith("*.") and
@@ -44,8 +45,8 @@ def get_subdomains(domain):
                     print(f"[+] crt.sh found {len(subdomains)} subdomains")
                     return list(subdomains)
 
-        except Exception:
-            print("[!] crt.sh failed, using backup source...")
+        except Exception as e:
+            print(f"[!] crt.sh error: {e}")
 
     # -------------------------
     # 2. HackerTarget (Backup)
@@ -58,18 +59,13 @@ def get_subdomains(domain):
         if response.status_code == 200:
             for line in response.text.splitlines():
                 sub = line.split(",")[0]
-
-                if (
-                    domain in sub and
-                    "@" not in sub and
-                    not sub.startswith("http")
-                ):
+                if domain in sub:
                     subdomains.add(sub.strip())
 
             print(f"[+] HackerTarget found {len(subdomains)} subdomains")
 
-    except Exception:
-        print("[!] HackerTarget failed, continuing without it...")
+    except Exception as e:
+        print(f"[!] HackerTarget error: {e}")
 
     return list(subdomains)
 
@@ -100,8 +96,8 @@ def resolve_dns(domain):
         answers = dns.resolver.resolve(domain, 'A')
         for rdata in answers:
             records.append(rdata.to_text())
-    except Exception:
-        pass
+    except Exception as e:
+        print(f"[!] DNS error: {e}")
     return records
 
 
@@ -119,13 +115,15 @@ def passive_recon(domain):
 
 
 # -----------------------------
-# Testing
+# Run Script
 # -----------------------------
 if __name__ == "__main__":
-    target = "github.com"
+    target = "github.com"   # change target here
 
     print(f"[+] Starting passive recon for {target}")
     data = passive_recon(target)
 
-    import json
-    print(json.dumps(data, indent=4))
+    with open("passive_output.json", "w") as f:
+        json.dump(data, f, indent=4)
+
+    print("[+] Passive recon saved to passive_output.json")

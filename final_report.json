@@ -1,0 +1,312 @@
+{
+    "target": "github.com",
+    "scan_type": "fast",
+    "total_targets": 10,
+    "passive": {
+        "domain": "github.com",
+        "subdomains": [
+            "dodgeball.github.com",
+            "f.cloud.github.com",
+            "www.skyline.github.com",
+            "cloud.github.com",
+            "api.security.github.com",
+            "classroom.github.com",
+            "render.github.com",
+            "importer2.github.com",
+            "www.jira.github.com",
+            "examadmin-uat.github.com",
+            "www.ws.support.github.com",
+            "graphql.github.com",
+            "res.communication.github.com",
+            "import.github.com",
+            "livesend.github.com",
+            "vscode-auth.github.com",
+            "codespaces-ppe.github.com",
+            "api.stars.github.com",
+            "staging-lab.github.com",
+            "proxima-review-lab.github.com",
+            "www.support.enterprise.github.com",
+            "id.github.com",
+            "stg.github.com",
+            "community.github.com",
+            "www.graphql.github.com",
+            "graphql-stage.github.com",
+            "asset-generator.github.com",
+            "edu.github.com",
+            "helpnext.github.com",
+            "review-lab.github.com",
+            "t.communication.github.com",
+            "support.enterprise.github.com",
+            "status.github.com",
+            "examregistration-uat.github.com",
+            "styleguide.github.com",
+            "brandguide.github.com",
+            "communication.github.com",
+            "render-lab.github.com",
+            "offer.github.com",
+            "www.render-lab.github.com",
+            "codespaces.github.com",
+            "cla.github.com",
+            "garage.github.com",
+            "fast.github.com",
+            "porter.github.com",
+            "maintainers.github.com",
+            "visualstudio.github.com",
+            "vpn-ca.iad.github.com",
+            "awesome-copilot.github.com",
+            "www.visualstudio.github.com",
+            "registry.github.com",
+            "ducky.github.com",
+            "www.maintainers.github.com",
+            "jobs.github.com",
+            "lab.github.com",
+            "import2.github.com",
+            "pkg.github.com",
+            "octostatus-production.github.com",
+            "www.github.com",
+            "skyline.github.com",
+            "gist.github.com",
+            "codespaces-dev.github.com",
+            "enterprise.github.com",
+            "www.partnerportal.github.com",
+            "model-launchkit.github.com",
+            "workspaces.github.com",
+            "docs-front-door.github.com",
+            "branch.github.com",
+            "learn.github.com",
+            "examadmin.github.com",
+            "schrauger.github.com",
+            "central.github.com",
+            "api.mcp.github.com",
+            "www.smtp.github.com",
+            "rs.github.com",
+            "emails.github.com",
+            "gameoff.github.com",
+            "lab-sandbox.github.com",
+            "www.api.stars.github.com",
+            "octocaptcha.review-lab.github.com",
+            "workspaces-ppe.github.com",
+            "slack.github.com",
+            "examregistration-api.github.com",
+            "docs.github.com",
+            "porter2.github.com",
+            "www.communication.github.com",
+            "mailing.github.com",
+            "examregistration-uat-api.github.com",
+            "smtp.github.com",
+            "talks.github.com",
+            "atom-installer.github.com",
+            "mona-arcade.github.com",
+            "github.com",
+            "www.api.security.github.com",
+            "mac-installer.github.com",
+            "workspaces-dev.github.com",
+            "education.github.com",
+            "jira.github.com",
+            "partnerportal.github.com",
+            "examregistration.github.com",
+            "hq.github.com",
+            "bug-bash.github.com",
+            "ws.support.github.com",
+            "m.communication.github.com",
+            "help.github.com",
+            "camo.github.com",
+            "www.graphql-stage.github.com",
+            "raw.github.com"
+        ],
+        "whois": {
+            "registrar": "MarkMonitor, Inc.",
+            "creation_date": "2007-10-09 18:20:50+00:00",
+            "expiration_date": "[datetime.datetime(2026, 10, 9, 18, 20, 50, tzinfo=tzoffset('UTC', 0)), datetime.datetime(2026, 10, 9, 0, 0, tzinfo=tzoffset('UTC', 0))]",
+            "emails": [
+                "abusecomplaints@markmonitor.com",
+                "whoisrequest@markmonitor.com"
+            ]
+        },
+        "ip_addresses": [
+            "20.207.73.82"
+        ],
+        "osint": {}
+    },
+    "active": {
+        "api.mcp.github.com": [
+            {
+                "host": "api.mcp.github.com",
+                "ip": "Unavailable",
+                "message": "No open ports (likely filtered)",
+                "web_info": {
+                    "url": null,
+                    "status": null,
+                    "title": null,
+                    "server": null
+                },
+                "risk": "INFO",
+                "status": "scanned"
+            }
+        ],
+        "api.security.github.com": [
+            {
+                "host": "api.security.github.com",
+                "ip": "Unavailable",
+                "message": "No open ports (likely filtered)",
+                "web_info": {
+                    "url": null,
+                    "status": null,
+                    "title": null,
+                    "server": null
+                },
+                "risk": "INFO",
+                "status": "scanned"
+            }
+        ],
+        "api.stars.github.com": [
+            {
+                "host": "api.stars.github.com",
+                "ip": "Unavailable",
+                "message": "No open ports (likely filtered)",
+                "web_info": {
+                    "url": null,
+                    "status": null,
+                    "title": null,
+                    "server": null
+                },
+                "risk": "INFO",
+                "status": "scanned"
+            }
+        ],
+        "asset-generator.github.com": [
+            {
+                "host": "185.199.108.153",
+                "ip": "Unavailable",
+                "port": 80,
+                "service": "http",
+                "state": "open",
+                "banner": "Unavailable",
+                "risk": "MEDIUM",
+                "status": "scanned",
+                "web_info": {
+                    "url": null,
+                    "status": null,
+                    "title": null,
+                    "server": null
+                }
+            },
+            {
+                "host": "185.199.108.153",
+                "ip": "Unavailable",
+                "port": 443,
+                "service": "https",
+                "state": "open",
+                "banner": "Unavailable",
+                "risk": "MEDIUM",
+                "status": "scanned",
+                "web_info": {
+                    "url": null,
+                    "status": null,
+                    "title": null,
+                    "server": null
+                }
+            }
+        ],
+        "atom-installer.github.com": [
+            {
+                "host": "atom-installer.github.com",
+                "ip": "Unavailable",
+                "message": "No open ports (likely filtered)",
+                "web_info": {
+                    "url": null,
+                    "status": null,
+                    "title": null,
+                    "server": null
+                },
+                "risk": "INFO",
+                "status": "scanned"
+            }
+        ],
+        "awesome-copilot.github.com": [
+            {
+                "host": "awesome-copilot.github.com",
+                "ip": "Unavailable",
+                "message": "No open ports (likely filtered)",
+                "web_info": {
+                    "url": null,
+                    "status": null,
+                    "title": null,
+                    "server": null
+                },
+                "risk": "INFO",
+                "status": "scanned"
+            }
+        ],
+        "branch.github.com": [
+            {
+                "host": "branch.github.com",
+                "ip": "Unavailable",
+                "message": "No open ports (likely filtered)",
+                "web_info": {
+                    "url": null,
+                    "status": null,
+                    "title": null,
+                    "server": null
+                },
+                "risk": "INFO",
+                "status": "scanned"
+            }
+        ],
+        "brandguide.github.com": [
+            {
+                "host": "brandguide.github.com",
+                "ip": "Unavailable",
+                "message": "No open ports (likely filtered)",
+                "web_info": {
+                    "url": null,
+                    "status": null,
+                    "title": null,
+                    "server": null
+                },
+                "risk": "INFO",
+                "status": "scanned"
+            }
+        ],
+        "bug-bash.github.com": [
+            {
+                "host": "bug-bash.github.com",
+                "ip": "Unavailable",
+                "message": "No open ports (likely filtered)",
+                "web_info": {
+                    "url": null,
+                    "status": null,
+                    "title": null,
+                    "server": null
+                },
+                "risk": "INFO",
+                "status": "scanned"
+            }
+        ],
+        "camo.github.com": [
+            {
+                "host": "camo.github.com",
+                "ip": "Unavailable",
+                "message": "No open ports (likely filtered)",
+                "web_info": {
+                    "url": null,
+                    "status": null,
+                    "title": null,
+                    "server": null
+                },
+                "risk": "INFO",
+                "status": "scanned"
+            }
+        ]
+    },
+    "summary": {
+        "total_subdomains": 10,
+        "scan_mode": "fast"
+    },
+    "risk_summary": {
+        "high": 0,
+        "medium": 2,
+        "low": 9
+    },
+    "status": "success"
+}
