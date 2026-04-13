@@ -1,3 +1,5 @@
 requests
 dnspython
 python-whois
+python-nmap
+
