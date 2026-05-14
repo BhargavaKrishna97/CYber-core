@@ -1,94 +1,111 @@
-# CYber-core
-A collection of cybersecurity utilities and scripts for ethical hacking and penetration testing.
+# AURA (AI Unified Recon & Attack-Surface Mapper)
 
-## Features
-- Passive reconnaissance (passive_recon.py)
-	- subdomain enumeration (crt.sh + HackerTarget)
-	- WHOIS lookup
-	- IP resolution
-- Active Scanning 
-	- Multi-threaded Nmap scanning
-	- Fast / Full / Vulnerability scan modes
-	- Open port detection
-	- Service identification
-- Advanced Detection
-	- Banner grabbing 
-	- HTPP/HTTPS detection
-	- Website title & server info extraction
-- Risk Analysis
-	- Ports classified as:
-		- HIGH (SSH, FTP, RDP, etc..)
-		- MEDIUM (HTTP, HTTPS, DB)
-		- LOW
-- JSON-based reporting for dashboard integration
-## Output
-- Structured JSON report ('final_report.json')
-- Includes:
-	- passive data
-	- active scan data
-	- summary
-	- risk summary
+AURA is an AI-powered cybersecurity reconnaissance and attack-surface mapping framework built for ethical hacking, penetration testing, and security research.
 
-## Installation
-git clone https://github.com/BhargavaKrishna97/CYber-core.git
-cd CYber-core
-pip install -r requirements.txt
+It combines:
 
-## Usage
--- Basic Scan
-	python main.py  example.com
--- Full Scan
-	python main.py example.com full
--- Vulnerability Scan
-	python main.py example.com vuln
+- Passive reconnaissance
+- Active scanning
+- Risk analysis
+- AI-assisted threat insights
+- Live dashboard visualization
 
-## Structure
-CYber-core/
+into a single unified platform.
+
+---
+
+# Features
+
+## Passive Reconnaissance
+- Subdomain enumeration
+  - crt.sh integration
+  - HackerTarget integration
+- WHOIS lookup
+- DNS/IP resolution
+- OSINT-ready architecture
+
+---
+
+## Active Scanning
+- Multi-threaded Nmap scanning
+- Fast scan mode
+- Full scan mode
+- Vulnerability scan mode
+- Open port detection
+- Service identification
+- Host discovery
+
+---
+
+## Advanced Detection
+- Banner grabbing
+- HTTP/HTTPS detection
+- Website title extraction
+- Server fingerprinting
+- Web service analysis
+
+---
+
+## Risk Analysis
+Ports are classified automatically:
+
+| Risk Level | Examples |
+|---|---|
+| HIGH | SSH, FTP, RDP, Telnet |
+| MEDIUM | HTTP, HTTPS, MySQL |
+| LOW | Other informational ports |
+
+---
+
+## AI Security Dashboard
+The dashboard provides:
+
+- Live scan visualization
+- Risk analytics
+- Port/service monitoring
+- AI-powered threat analysis
+- JSON report importing
+- Interactive charts
+
+---
+
+# Dashboard Features
+
+| Feature | Description |
+|---|---|
+| Live target info | Shows scan target and mode |
+| Subdomain overview | Lists discovered subdomains |
+| Open port tracking | Displays open ports/services |
+| Risk summary | High / Medium / Low classification |
+| Risk chart | Donut-based risk visualization |
+| AI Analyze | AI-generated threat assessment |
+| Upload JSON | Load external reports |
+| Flask backend support | Fetch latest report dynamically |
+
+---
+
+# Project Structure
+
+```text
+AURA/
+│
+├── docs/
+│   └── architecture.md
+│
+├── examples/
+│   ├── passive_output.json
+│   └── passive_recon_output.json
 │
 ├── modules/
-│   ├── passive_recon.py
+│   ├── __init__.py
 │   ├── active_scan.py
+│   └── passive_recon.py
 │
+├── dashboard.html
+├── final_report.json
 ├── main.py
+├── README.md
 ├── requirements.txt
-└── README.md
-
-##  Sample Output
-
-```bash
-$ python main.py github.com
-
-[+] Starting full recon on github.com
-[+] Scan mode: fast
-[+] Total targets for scanning: 10
-[+] Scanning api.github.com (fast)...
-[+] Scanning camo.github.com (fast)...
-[+] Full report saved to final_report.json
-
-
-##  JSON Output (Example)
-
-```json
-{
-  "target": "github.com",
-  "scan_type": "fast",
-  "summary": {
-    "total_subdomains": 10,
-    "scan_mode": "fast"
-  },
-  "risk_summary": {
-    "high": 2,
-    "medium": 5,
-    "low": 8
-  },
-  "status": "success"
-}
-
-## Contributing
-- Fork the repo
-- Create a branch (feature/---)
-- Commit changes
-- Open a pull request
-
-## License
-MIT License
+├── server.py
+├── test_nmap.py
+└── .gitignore

@@ -1,0 +1,18 @@
+# Python
+__pycache__/
+*.pyc
+
+# Virtual Environment
+venv/
+
+# Reports
+final_report.json
+
+# OS Files
+.DS_Store
+
+# VS Code
+.vscode/
+
+# Logs
+*.log
